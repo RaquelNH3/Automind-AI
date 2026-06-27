@@ -45,7 +45,7 @@ AutoMind is a privacy‑first, conversational AI assistant that:
 - Safety‑mode compliance
 
 ## Personal Vision
-I built this concept because I want an in‑car assistant that feels human, helpful, and safe — something I would actually use. AutoMind blends privacy, safety, and emotional support into a modern driving experience.
+I built this concept because I want an in‑car assistant that feels human, helpful, and safe. Something I would actually use. AutoMind blends privacy, safety, and emotional support into a modern driving experience.
 
 ## Files
 - Slide deck link: https://canva.link/tfk3ihbd8yhi7po](https://canva.link/14tx7b391ast6sn
