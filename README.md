@@ -140,6 +140,6 @@ AutoMind demonstrates how conversational AI can improve the driving experience w
 
 ## Repository Contents
 
-- Pitch deck presentation
+- Pitch deck presentation: https://canva.link/tfk3ihbd8yhi7po
 - System architecture diagram
 - Project README
