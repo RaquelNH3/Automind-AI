@@ -1,80 +1,147 @@
 # Car-AI
-## AutoMind: A Privacy-First In-Car AI Assistant
+
+# AutoMind: A Privacy-First Conversational In-Car AI Assistant
 
 **By Raquel Hernandez**
 
 ## Overview
-AutoMind is a next-generation in-car AI assistant designed to make driving safer, calmer, and more intuitive. It combines a natural conversational interface with a hybrid LLM architecture that prioritizes privacy, low latency, and reliable assistance.
+
+AutoMind is a privacy-first conversational AI assistant designed specifically for the in-car experience. It combines hybrid large language model (LLM) architecture with on-device intelligence to provide fast, context-aware assistance while protecting user privacy. By processing routine requests locally and using cloud resources only when necessary, AutoMind delivers a safer, more responsive driving experience.
+
+---
 
 ## Problem
-Current in-car assistants are often limited to rigid voice commands, while many drivers rely on smartphones for navigation and information. This increases distraction and raises concerns about privacy and data security.
+
+Today's in-car voice assistants create three major challenges:
+
+- **Privacy Risks:** Many assistants continuously transmit voice data to cloud servers, exposing sensitive personal information.
+- **Limited Context Awareness:** Existing systems often fail to remember previous interactions or adapt to individual driver preferences.
+- **Rigid Conversations:** Most assistants rely on fixed commands instead of supporting natural, multi-turn conversations, increasing distraction and frustration.
+
+Drivers need an AI assistant that prioritizes privacy, understands context, and enables natural hands-free interaction.
+
+---
 
 ## Solution
-AutoMind is a privacy-first conversational AI assistant that:
 
-- Provides natural voice interaction
-- Reduces driver distraction through hands-free assistance
-- Handles routine requests locally with an on-device LLM
-- Uses a cloud LLM only for complex reasoning when necessary
-- Protects user data through privacy-first system design
-- Supports a calmer driving experience with contextual assistance
+AutoMind addresses these challenges through a hybrid AI architecture that combines local processing with cloud intelligence.
+
+Key capabilities include:
+
+- Natural language voice interaction
+- Context-aware, multi-turn conversations
+- On-device processing for routine and privacy-sensitive requests
+- Cloud processing for complex reasoning when needed
+- Retrieval-Augmented Generation (RAG) for vehicle manuals, navigation, traffic, and diagnostics
+- Hands-free interaction designed to reduce driver distraction
+- Privacy-first storage of user preferences and personal data
+
+---
 
 ## System Goals
 
-**Primary Goal**
-- Reduce driver workload and improve road safety
+### Primary Goal
 
-**Secondary Goals**
-- Personalization
-- Privacy protection
-- Offline resilience
-- Low-latency responses
+Reduce driver workload, improve road safety, and deliver a trustworthy AI driving experience.
+
+### Secondary Goals
+
+- Protect user privacy
+- Minimize response latency
+- Maintain conversational context
+- Operate reliably with limited connectivity
+- Provide personalized assistance without unnecessary cloud dependence
+
+---
 
 ## System Architecture
 
-The AutoMind architecture includes:
+AutoMind consists of the following components:
 
-- Wake Word Engine
+- Driver Interface
+- Wake Word Detection
 - Speech-to-Text (STT)
-- Context Manager
 - On-Device LLM
+- Decision Router
 - Optional Cloud LLM
-- Retrieval-Augmented Generation (RAG) for vehicle manuals and navigation data
+- Retrieval-Augmented Generation (RAG)
 - Privacy Layer
-- Safety Layer
+- Safety Guardrails
 - Text-to-Speech (TTS)
-- Audio Response through the infotainment system
+- Vehicle Display
 
-The architecture prioritizes on-device processing whenever possible, using cloud services only for requests requiring additional knowledge or complex reasoning.
+The system processes routine requests locally while routing complex requests to cloud services only when necessary. This architecture balances privacy, responsiveness, and advanced AI capabilities.
+
+---
 
 ## LLM Configuration
 
-- **Deployment:** Hybrid (On-device + Cloud)
-  - Balances privacy, low latency, and advanced capabilities.
-- **License Type:** Open Source
-  - Supports on-device deployment and greater control over sensitive user data.
-- **Temperature:** 0.2
-  - Produces consistent, reliable responses while minimizing hallucinations.
-- **Max Tokens:** 150
-  - Keeps responses concise and reduces driver distraction.
-- **Top-K Retrieval:** 3
-  - Retrieves only the most relevant vehicle manual or navigation documents.
-- **Fine-Tuning**
-  - Vehicle manuals, safety guidelines, and common driving commands.
+**Deployment:** Hybrid (On-device + Cloud)
+
+**License Type:** Commercial API License
+
+**Model:** Quantized on-device language model with optional cloud inference
+
+**Temperature:** 0.2
+
+**Max Tokens:** 150
+
+**Context Window:** 8K
+
+**Top-K Retrieval:** 3
+
+**RAG:** Enabled for vehicle manuals, navigation, traffic information, and diagnostics
+
+**Fine-Tuning:** Automotive documentation, navigation guidance, driver assistance knowledge, and safety guidelines
+
+---
+
+## Privacy & Security
+
+AutoMind is designed with privacy as a core principle.
+
+- Sensitive requests are processed on-device whenever possible.
+- Personal preferences remain encrypted on the vehicle.
+- Cloud processing is optional and limited to complex requests.
+- Raw voice conversations are not transmitted by default.
+- Privacy controls are transparent and user managed.
+
+---
 
 ## Success Metrics
 
-- Reduced driver touch interactions
-- Task completion rate
-- Intent recognition accuracy
-- Offline success rate
-- Privacy trust score
+The success of AutoMind is measured through product performance, AI quality, and user trust.
 
-## Personal Vision
+### User Engagement
 
-I designed AutoMind to demonstrate how AI can improve the driving experience without sacrificing privacy or safety. By combining local AI processing with cloud capabilities only when necessary, AutoMind provides a practical approach to building trustworthy, driver-focused intelligent assistants.
+- Daily active usage
+- Average successful interactions per trip
+- Driver retention
 
-## Files
+### AI Performance
 
-- Slide deck: https://canva.link/tfk3ihbd8yhi7po
-- System architecture diagram: Included in the presentation
+- Intent recognition accuracy greater than 93%
+- Task completion rate greater than 90%
+- Multi-turn context retention
+- Low fallback rate
+
+### Privacy & Trust
+
+- On-device processing compliance
+- Zero unauthorized data transmission
+- User trust and satisfaction
+- Compliance with applicable privacy regulations
+
+---
+
+## Future Vision
+
+AutoMind demonstrates how conversational AI can improve the driving experience while respecting user privacy. By combining intelligent conversation, hybrid AI architecture, and privacy-first design, the platform aims to create a safer, more intuitive, and more trustworthy in-car assistant.
+
+---
+
+## Repository Contents
+
+- Pitch deck presentation
+- System architecture diagram
+- Project README
