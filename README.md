@@ -1,5 +1,3 @@
-# Car-AI
-
 # AutoMind: A Privacy-First Conversational In-Car AI Assistant
 
 **By Raquel Hernandez**
