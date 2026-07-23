@@ -1,7 +1,7 @@
 # AutoMind: A Privacy-First Conversational In-Car AI Assistant
 
 Presentation
-https://canva.link/tfk3ihbd8yhi7po
+https://canva.link/14tx7b391ast6sn
 
 **By Raquel Hernandez**
 
