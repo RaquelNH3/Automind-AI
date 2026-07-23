@@ -1,59 +1,37 @@
-  AutoMind System Architecture
-
-                           Driver
-                              │
-                              ▼
-                      Wake Word Engine
-                              │
-                              ▼
-                      Speech-to-Text (STT)
-                              │
-                              ▼
-                     Context Manager
-                              │
-                              ▼
-                      On-Device LLM
-                              │
-                              ▼
-                     Decision Router
-                     ┌────────┴────────┐
-                     │                 │
-                     ▼                 ▼
-             Local Response      Cloud LLM
-                                       │
-                                       ▼
-                           RAG Knowledge Base
-                       (Vehicle Manual, Traffic,
-                        Navigation, Diagnostics)
-                                       │
-                                       ▼
-                              Privacy Layer
-                                       │
-                                       ▼
-                             Safety Guardrails
-                                       │
-                                       ▼
-                           Text-to-Speech (TTS)
-                                       │
-                                       ▼
-                              Vehicle Display
-                              + Audio Output
-
-Legend
-
-On-Device Components
-Wake Word Engine
-STT
-Context Manager
-On-Device LLM
-Privacy Layer
-Safety Guardrails
-TTS
-
-Cloud Components
-Cloud LLM
-RAG Knowledge Base
-
-Hybrid Routing
-Routine and privacy-sensitive requests remain on-device.
-Complex requests are routed to the cloud only when needed.
+                      Driver
+                         │
+                         ▼
+                Wake Word Detection
+                         │
+                         ▼
+               Speech-to-Text (STT)
+                         │
+                         ▼
+                 Context Manager
+                         │
+                         ▼
+                  Privacy Filter
+                         │
+                         ▼
+                 Decision Router
+              ┌──────────┴──────────┐
+              │                     │
+              ▼                     ▼
+      On-Device LLM          Cloud LLM
+              │                     │
+              │             RAG Knowledge Base
+              │      (Manuals • Traffic •
+              │      Navigation • Diagnostics)
+              └──────────┬──────────┘
+                         │
+                         ▼
+                Safety Guardrails
+                         │
+                         ▼
+                 Output Validation
+                         │
+                         ▼
+               Text-to-Speech (TTS)
+                         │
+                         ▼
+          Vehicle Display + Audio Output
